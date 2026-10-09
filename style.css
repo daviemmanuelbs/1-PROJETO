@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+#jesus{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 100;
+   
+    color: white;
+    text-align: right;
+    right: 20px;
+    top: 90px;
+    position: fixed;
+}
+
+nav{ 
+    padding: 15px;
+    top: 0;
+    left: 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(44, 45, 46);
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    
+}
+
+nav ul li{
+    margin: 10px;
+}
+
+nav ul li a{
+    color: rgb(255, 205, 112);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+nav ul li a:hover{
+    color: rgb(255, 255, 0);
+}
+
+#home{
+    background: url(./fundo.jpg) center no-repeat;
+    background-size: cover;
+    text-align: center;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#home h1{
+    color: white;
+    font-weight: 800;
+    -webkit-text-stroke: 1px black;
+}
+
+#home p{
+    font-size: larger;
+    color: wheat;
+     font-weight: 700;
+}
+
+#home img{
+    width: 400px;
+    border: 3px solid;
+    border-color: wheat; 
+    border-radius: 40px;
+}
+
+#biografia{
+    background: url(./fundo.jpg) center no-repeat;
+    background-size: cover;
+    text-align: center;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#biografia h2{
+    color: white;
+    font-weight: 800;
+    -webkit-text-stroke: 1px black;
+    font-size: 40px;
+}
+
+#biografia dl dt{
+    color: wheat;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+#biografia dl dt strong{
+    color: white;
+    font-weight: 900;
+    -webkit-text-stroke: 1px wheat;
+}
+
+#biografia dl dd{
+    color: white
+}
+
+#contatos{
+      background: url(./fundo.jpg) center no-repeat;
+    background-size: cover;
+    text-align: center;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contatos h2{
+    color: white;
+    font-weight: 800;
+    -webkit-text-stroke: 1px black;
+    font-size: 40px;
+}
+
+#contatos ul li{
+    text-align: left;
+    color: wheat;
+    font-size: 20px;
+    font-weight: 900;
+}
+#contatos ul li a{
+    text-decoration: none;
+    color: wheat;
+}
+
+#contatos ul li a:hover{
+    color:yellow
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 2px solid wheat;
+    border-radius: 15px;
+    background-color: rgba(198, 110, 56, 0.234);
+}
+
+#gostos{
+    background: url(./fundo.jpg) center no-repeat;
+    background-size: cover;
+    text-align: center;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#gostos h2{
+    color: white;
+    font-weight: 800;
+    -webkit-text-stroke: 1px black;
+    font-size: 40px;
+}
+
+#gostos table thead tr th{
+    color: wheat
+}
+
+#gostos table tbody tr td{
+    color: white;
+}
+#gostos p{
+    font-size: larger;
+    color: wheat;
+     font-weight: 700;
+}
+
+#rápido{
+    background: url(./fundo.jpg) center no-repeat;
+    background-size: cover;
+    text-align: center;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#rápido h2{
+    color: white;
+    font-weight: 800;
+    -webkit-text-stroke: 1px black;
+    font-size: 40px;
+}
+
+#rápido label{
+     color: wheat;
+    font-size: 20px;
+    font-weight: 900;
+
+}
+
+#rápido input{
+    width: 100%;
+    max-width: 400px;
+    resize: horizontal;
+    padding: 10px;
+    border: 1px solid wheat
+}
+
+#rápido button{
+background-color: wheat;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-weight: 900;
+}
+
+#rápido button:hover{
+    color: rgb(0, 255, 47);
+}
+
+
+
+
+footer{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
