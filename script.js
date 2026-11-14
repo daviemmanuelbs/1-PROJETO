@@ -1,58 +1,29 @@
-
+// --- 1. ALTERAR MODO ESCURO / MODO CLARO ---
 const btnCor = document.getElementById('btn-cor');
-const secoes = document.querySelectorAll('section');
-const footer = document.querySelector('footer');
-
-const temas = [
-    { fundo: 'black', texto: 'white' },
-    { fundo: '#0d1b2a', texto: '#e0e1dd' }, 
-    { fundo: '#1b263b', texto: '#ffffff' },
-    { fundo: '#2b1d1d', texto: '#ffedd8' }  
-];
-
-let temaAtual = 0;
 
 btnCor.addEventListener('click', () => {
-    temaAtual = (temaAtual + 1) % temas.length;
-    const corEscolhida = temas[temaAtual];
+    document.body.classList.toggle('modo-claro');
 
-    document.body.style.backgroundColor = corEscolhida.fundo;
-    footer.style.backgroundColor = corEscolhida.fundo;
-
-    secoes.forEach(secao => {
-        secao.style.backgroundColor = corEscolhida.fundo;
-    });
+    if (document.body.classList.contains('modo-claro')) {
+        btnCor.textContent = 'Ativar Modo Escuro';
+    } else {
+        btnCor.textContent = 'Ativar Modo Claro';
+    }
 });
 
+// --- 2. CALCULADORA DE SOMA SIMPLES ---
+const btnSomar = document.getElementById('btn-somar');
 
-const display = document.getElementById('display');
+btnSomar.addEventListener('click', () => {
+    const n1 = parseFloat(document.getElementById('num1').value);
+    const n2 = parseFloat(document.getElementById('num2').value);
+    const resultadoTexto = document.getElementById('resultado-soma');
 
-function adicionarValor(valor) {
-    if (display.value === 'Erro') {
-        display.value = '';
+    if (isNaN(n1) || isNaN(n2)) {
+        resultadoTexto.textContent = 'Preencha os dois números!';
+        return;
     }
-    display.value += valor;
-}
 
-function limparDisplay() {
-    display.value = '';
-}
-
-function apagarUltimo() {
-    display.value = display.value.slice(0, -1);
-}
-
-function calcular() {
-    try {
-        if (display.value.trim() === '') return;
-        const resultado = Function('"use strict";return (' + display.value + ')')();
-        
-        if (!isFinite(resultado)) {
-            display.value = 'Erro';
-        } else {
-            display.value = Number(resultado.toFixed(8));
-        }
-    } catch {
-        display.value = 'Erro';
-    }
-}
+    const soma = n1 + n2;
+    resultadoTexto.textContent = `Resultado: ${soma}`;
+});

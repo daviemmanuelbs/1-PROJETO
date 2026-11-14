@@ -71,41 +71,18 @@
     <p>Experimentos práticos com JavaScript</p>
 
     <div class="lab-container">
-        <!-- Botão para mudar a cor do site -->
         <div class="lab-card">
             <h3>Alterar Tema</h3>
-            <button id="btn-cor" type="button">Mudar Cor do Site</button>
+            <button id="btn-cor" type="button">Ativar Modo Claro</button>
         </div>
 
-        <!-- Calculadora -->
         <div class="lab-card">
-            <h3>Calculadora</h3>
-            <div class="calculadora">
-                <input type="text" id="display" readonly placeholder="0">
-                <div class="botoes-calc">
-                    <button type="button" onclick="limparDisplay()" class="btn-acao">C</button>
-                    <button type="button" onclick="apagarUltimo()" class="btn-acao">⌫</button>
-                    <button type="button" onclick="adicionarValor('/')" class="btn-op">÷</button>
-                    <button type="button" onclick="adicionarValor('*')" class="btn-op">×</button>
-
-                    <button type="button" onclick="adicionarValor('7')">7</button>
-                    <button type="button" onclick="adicionarValor('8')">8</button>
-                    <button type="button" onclick="adicionarValor('9')">9</button>
-                    <button type="button" onclick="adicionarValor('-')" class="btn-op">-</button>
-
-                    <button type="button" onclick="adicionarValor('4')">4</button>
-                    <button type="button" onclick="adicionarValor('5')">5</button>
-                    <button type="button" onclick="adicionarValor('6')">6</button>
-                    <button type="button" onclick="adicionarValor('+')" class="btn-op">+</button>
-
-                    <button type="button" onclick="adicionarValor('1')">1</button>
-                    <button type="button" onclick="adicionarValor('2')">2</button>
-                    <button type="button" onclick="adicionarValor('3')">3</button>
-                    <button type="button" onclick="calcular()" class="btn-igual">=</button>
-
-                    <button type="button" onclick="adicionarValor('0')" class="btn-zero">0</button>
-                    <button type="button" onclick="adicionarValor('.')">.</button>
-                </div>
+            <h3>Calculadora de Soma</h3>
+            <div class="calculadora-simples">
+                <input type="number" id="num1" placeholder="Digite o 1º número">
+                <input type="number" id="num2" placeholder="Digite o 2º número">
+                <button type="button" id="btn-somar">Somar</button>
+                <p id="resultado-soma">Resultado: 0</p>
             </div>
         </div>
     </div>
