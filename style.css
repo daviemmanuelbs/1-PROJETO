@@ -1,236 +1,312 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
 
-#jesus{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: 100;
-   
-    color: white;
-    text-align: right;
-    right: 20px;
-    top: 90px;
-    position: fixed;
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
 }
 
-nav{ 
-    padding: 15px;
+body {
+    background-color: black;
+    overflow-x: hidden;
+}
+
+#jesus {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    font-size: clamp(0.75rem, 2vw, 1rem);
+    color: white;
+    text-align: right;
+    right: 1.25rem;
+    top: 5.5rem;
+    position: fixed;
+    z-index: 900;
+    pointer-events: none;
+}
+
+
+nav {
+    padding: 0.8rem 1.5rem;
     top: 0;
     left: 0;
-    text-align: center;
     position: fixed;
     width: 100%;
     background-color: rgb(44, 45, 46);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-nav ul{
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    color: rgb(255, 205, 112);
+    font-size: 1.8rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    
+    flex-wrap: wrap;
+    gap: 1.5rem;
 }
 
-nav ul li{
-    margin: 10px;
+nav ul li {
+    margin: 0.3rem;
 }
 
-nav ul li a{
+nav ul li a {
     color: rgb(255, 205, 112);
     text-decoration: none;
-    font-size: 15px;
+    font-size: 1rem;
     font-weight: 800;
+    transition: color 0.3s ease;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     color: rgb(255, 255, 0);
 }
 
-#home{
+
+section {
     background-color: black;
     text-align: center;
-    height: 90vh;
+    min-height: 100vh;
+    width: 100%;
+    padding: 6rem 1.5rem 3rem 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    gap: 1.25rem;
 }
 
-#home h1{
+
+#home h1 {
     color: white;
     font-weight: 800;
-    -webkit-text-stroke: 1px black;
+    font-size: clamp(1.6rem, 4vw, 2.5rem);
+    -webkit-text-stroke: 0.06rem black;
+    max-width: 50rem;
 }
 
-#home p{
-    font-size: larger;
+#home p {
+    font-size: clamp(1rem, 2.2vw, 1.25rem);
     color: wheat;
-     font-weight: 700;
+    font-weight: 700;
+    max-width: 45rem;
+    line-height: 1.5;
 }
 
-#home img{
-    width: 400px;
-    border: 3px solid;
-    border-color: wheat; 
-    border-radius: 40px;
+#home img {
+    width: 85%;
+    max-width: 22rem;
+    height: auto;
+    border: 0.2rem solid wheat;
+    border-radius: 2.5rem;
+    margin-top: 0.5rem;
 }
 
-#biografia{
-    background-color: black;
-    text-align: center;
-    height: 90vh;
+
+#biografia h2 {
+    color: white;
+    font-weight: 800;
+    -webkit-text-stroke: 0.06rem black;
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+}
+
+#biografia dl {
+    width: 100%;
+    max-width: 40rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    gap: 0.8rem;
 }
 
-#biografia h2{
-    color: white;
-    font-weight: 800;
-    -webkit-text-stroke: 1px black;
-    font-size: 40px;
-}
-
-#biografia dl dt{
+#biografia dl dt {
     color: wheat;
-    font-size: 20px;
+    font-size: clamp(1.1rem, 2.5vw, 1.3rem);
     font-weight: 900;
 }
 
-#biografia dl dt strong{
+#biografia dl dt strong {
     color: white;
     font-weight: 900;
-    -webkit-text-stroke: 1px wheat;
+    -webkit-text-stroke: 0.04rem wheat;
 }
 
-#biografia dl dd{
-    color: white
+#biografia dl dd {
+    color: white;
+    font-size: clamp(0.95rem, 2vw, 1.1rem);
+    margin-bottom: 0.5rem;
 }
 
-#contatos{
-    background-color: black;
-    text-align: center;
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+#biografia dl hr {
+    border: 0;
+    border-top: 0.06rem solid rgba(245, 222, 179, 0.3);
+    margin: 0.5rem 0;
 }
 
-#contatos h2{
+/* CONTATOS / REDES SOCIAIS */
+#contatos h2 {
     color: white;
     font-weight: 800;
-    -webkit-text-stroke: 1px black;
-    font-size: 40px;
+    -webkit-text-stroke: 0.06rem black;
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
 }
 
-#contatos ul li{
+#contatos ul {
+    list-style-position: inside;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+#contatos ul li {
     text-align: left;
     color: wheat;
-    font-size: 20px;
+    font-size: clamp(1.1rem, 2.5vw, 1.3rem);
     font-weight: 900;
 }
-#contatos ul li a{
+
+#contatos ul li a {
     text-decoration: none;
     color: wheat;
+    transition: color 0.3s ease;
 }
 
-#contatos ul li a:hover{
-    color:yellow
+#contatos ul li a:hover {
+    color: yellow;
+}
+
+#gostos h2 {
+    color: white;
+    font-weight: 800;
+    -webkit-text-stroke: 0.06rem black;
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+}
+
+#gostos p {
+    font-size: clamp(1rem, 2.2vw, 1.25rem);
+    color: wheat;
+    font-weight: 700;
+    max-width: 45rem;
+    line-height: 1.5;
+}
+
+#gostos video {
+    width: 95%;
+    max-width: 50rem;
+    height: auto;
+    border: 0.15rem solid wheat;
+    border-radius: 1rem;
+}
+
+
+#rápido h2 {
+    color: white;
+    font-weight: 800;
+    -webkit-text-stroke: 0.06rem black;
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
 }
 
 form {
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    border: 2px solid wheat;
-    border-radius: 15px;
+    gap: 0.8rem;
+    width: 90%;
+    max-width: 28rem;
+    padding: 1.5rem;
+    border: 0.125rem solid wheat;
+    border-radius: 1rem;
     background-color: rgba(198, 110, 56, 0.234);
+    text-align: left;
 }
 
-#gostos{
-    background-color: black;
-    text-align: center;
-    height: 120vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#gostos h2{
-    color: white;
-    font-weight: 800;
-    -webkit-text-stroke: 1px black;
-    font-size: 40px;
-}
-
-#gostos table thead tr th{
-    color: wheat
-}
-
-#gostos table tbody tr td{
-    color: white;
-}
-#gostos p{
-    font-size: larger;
+#rápido label {
     color: wheat;
-     font-weight: 700;
-}
-
-#rápido{
-   background-color: black;
-    text-align: center;
-    height: 120vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#rápido h2{
-    color: white;
-    font-weight: 800;
-    -webkit-text-stroke: 1px black;
-    font-size: 40px;
-}
-
-#rápido label{
-     color: wheat;
-    font-size: 20px;
+    font-size: 1.1rem;
     font-weight: 900;
-
 }
 
-#rápido input{
+#rápido input {
     width: 100%;
-    max-width: 400px;
-    resize: horizontal;
-    padding: 10px;
-    border: 1px solid wheat
+    padding: 0.75rem;
+    border: 0.06rem solid wheat;
+    border-radius: 0.4rem;
+    font-size: 1rem;
 }
 
-#rápido button{
-background-color: wheat;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-font-weight: 900;
+#rápido button {
+    margin-top: 0.5rem;
+    padding: 0.8rem;
+    background-color: wheat;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 900;
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: color 0.3s ease, background-color 0.3s ease;
 }
 
-#rápido button:hover{
+#rápido button:hover {
     color: rgb(0, 255, 47);
+    background-color: rgb(44, 45, 46);
 }
 
-
-
-
-footer{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+footer {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: 100;
+    font-size: 0.9rem;
     background-color: black;
     color: white;
     text-align: center;
+    padding: 1.5rem 1rem;
+    border-top: 0.06rem solid rgba(245, 222, 179, 0.2);
+}
+
+@media (max-width: 768px) {
+    nav {
+        justify-content: flex-end;
+        padding: 0.8rem 1.5rem;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: rgb(44, 45, 46);
+        padding: 1rem 0;
+        gap: 1rem;
+        border-top: 0.06rem solid rgba(255, 205, 112, 0.2);
+    }
+
+    #menu-toggle:checked ~ ul {
+        display: flex;
+    }
+
+    #jesus {
+        top: 4.5rem;
+        right: 1rem;
+    }
 }
