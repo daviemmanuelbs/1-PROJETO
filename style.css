@@ -82,9 +82,9 @@ nav ul li a:hover {
 section {
     background-color: black;
     text-align: center;
-    min-height: 100vh;
     width: 100%;
-    padding: 6rem 1.5rem 3rem 1.5rem;
+    padding: 4rem 1.5rem;
+    scroll-margin-top: 4.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -92,6 +92,10 @@ section {
     gap: 1.25rem;
 }
 
+#home {
+    min-height: 85vh;
+    padding-top: 6.5rem;
+}
 
 #home h1 {
     color: white;
