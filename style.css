@@ -49,8 +49,7 @@ nav ul li a:hover{
 }
 
 #home{
-    background: url(./fundo.jpg) center no-repeat;
-    background-size: cover;
+    background-color: black;
     text-align: center;
     height: 90vh;
     display: flex;
@@ -80,8 +79,7 @@ nav ul li a:hover{
 }
 
 #biografia{
-    background: url(./fundo.jpg) center no-repeat;
-    background-size: cover;
+    background-color: black;
     text-align: center;
     height: 90vh;
     display: flex;
@@ -114,8 +112,7 @@ nav ul li a:hover{
 }
 
 #contatos{
-      background: url(./fundo.jpg) center no-repeat;
-    background-size: cover;
+    background-color: black;
     text-align: center;
     height: 90vh;
     display: flex;
@@ -156,8 +153,7 @@ form {
 }
 
 #gostos{
-    background: url(./fundo.jpg) center no-repeat;
-    background-size: cover;
+    background-color: black;
     text-align: center;
     height: 120vh;
     display: flex;
@@ -187,8 +183,7 @@ form {
 }
 
 #rápido{
-    background: url(./fundo.jpg) center no-repeat;
-    background-size: cover;
+   background-color: black;
     text-align: center;
     height: 120vh;
     display: flex;
