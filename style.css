@@ -217,6 +217,130 @@ section {
     border-radius: 1rem;
 }
 
+/* LABORATÓRIO DE TESTES */
+#teste h2 {
+    color: white;
+    font-weight: 800;
+    -webkit-text-stroke: 0.06rem black;
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+}
+
+#teste p {
+    font-size: clamp(1rem, 2.2vw, 1.25rem);
+    color: wheat;
+    font-weight: 700;
+}
+
+.lab-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    width: 100%;
+    max-width: 55rem;
+    margin-top: 1rem;
+}
+
+.lab-card {
+    background-color: rgba(198, 110, 56, 0.234);
+    border: 0.125rem solid wheat;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 90%;
+    max-width: 20rem;
+}
+
+.lab-card h3 {
+    color: wheat;
+    font-size: 1.3rem;
+}
+
+#btn-cor {
+    padding: 0.8rem 1.2rem;
+    background-color: wheat;
+    color: black;
+    font-weight: 900;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+#btn-cor:hover {
+    background-color: yellow;
+    transform: scale(1.03);
+}
+
+/* CALCULADORA */
+.calculadora {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+#display {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1.5rem;
+    text-align: right;
+    background-color: rgb(25, 25, 25);
+    color: wheat;
+    border: 0.06rem solid wheat;
+    border-radius: 0.5rem;
+}
+
+.botoes-calc {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+}
+
+.botoes-calc button {
+    padding: 0.9rem;
+    font-size: 1.1rem;
+    font-weight: 800;
+    border: none;
+    border-radius: 0.4rem;
+    background-color: rgb(44, 45, 46);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.botoes-calc button:hover {
+    background-color: rgb(70, 72, 74);
+}
+
+.botoes-calc .btn-op {
+    background-color: wheat;
+    color: black;
+}
+
+.botoes-calc .btn-op:hover {
+    background-color: yellow;
+}
+
+.botoes-calc .btn-acao {
+    background-color: rgb(180, 60, 60);
+    color: white;
+}
+
+.botoes-calc .btn-igual {
+    background-color: rgb(46, 160, 67);
+    color: white;
+    grid-row: span 2;
+}
+
+.botoes-calc .btn-zero {
+    grid-column: span 2;
+}
 
 #rápido h2 {
     color: white;
