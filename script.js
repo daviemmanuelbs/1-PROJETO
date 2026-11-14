@@ -1,4 +1,4 @@
-// --- 1. ALTERAR MODO ESCURO / MODO CLARO ---
+
 const btnCor = document.getElementById('btn-cor');
 
 btnCor.addEventListener('click', () => {
@@ -11,7 +11,7 @@ btnCor.addEventListener('click', () => {
     }
 });
 
-// --- 2. CALCULADORA DE SOMA SIMPLES ---
+
 const btnSomar = document.getElementById('btn-somar');
 
 btnSomar.addEventListener('click', () => {
